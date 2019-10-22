@@ -1,0 +1,46 @@
+// Author : Leo
+// Time : Oct.21.2019
+
+// Dot demo:
+/*
+ 
+ *                *
+ **       to     * *
+ ***            *   *
+ ****          *******
+ 
+ */
+
+
+
+public class Demo1 {
+	
+	public static void main(String [] args) {
+	 int layer = 4; // Total Layer 4
+	
+	 for (int i = 1; i <= layer; i++) {
+		 
+		 // Spaces : 1layer = 4, 2layer = 3, 3 layer = 2, 4 layer = 1;
+		 for (int k = 1; k <= layer - i; k++) {
+			 System.out.print(" ");
+		 }
+		 
+		 // Stars
+		 for (int j = 1; j <= (i-1)*2 + 1; j++) {
+			 // See if the layer is Top or Bottom layer
+			 if (i == 1 || i == layer) {
+				 System.out.print("*");
+			 } else {
+				 // if First Star*
+				 if (j==1 || j==(i-1)*2+1) {
+					 System.out.print("*");
+				 } else {
+					 System.out.print(" ");
+				 }
+		     }
+		 }
+		 
+		 System.out.println();
+	 }
+	} 
+}
