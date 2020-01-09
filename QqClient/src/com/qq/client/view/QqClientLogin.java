@@ -46,18 +46,18 @@ public class QqClientLogin extends JFrame implements ActionListener {
 		// middle part
 		jp2 = new JPanel(new GridLayout(3,3));
 		
-		jp2_jbl1 = new JLabel("qq号码",JLabel.CENTER);
-		jp2_jbl2 = new JLabel("qq密码",JLabel.CENTER);
-		jp2_jbl3 = new JLabel("忘记密码",JLabel.CENTER);
-		jp2_jbl4 = new JLabel("申请密码保护",JLabel.CENTER);
+		jp2_jbl1 = new JLabel("qq鍙风爜",JLabel.CENTER);
+		jp2_jbl2 = new JLabel("qq瀵嗙爜",JLabel.CENTER);
+		jp2_jbl3 = new JLabel("蹇樿瀵嗙爜",JLabel.CENTER);
+		jp2_jbl4 = new JLabel("鐢宠瀵嗙爜淇濇姢",JLabel.CENTER);
 		
 		jp2_jbl3.setForeground(Color.blue);
 		
-		jp2_jbl = new JButton(new ImageIcon("清除号码"));
+		jp2_jbl = new JButton(new ImageIcon("娓呴櫎鍙风爜"));
 		jp2_jtf = new JTextField();
 		jp2_jpf = new JPasswordField();
-		jp2_jcb1 = new JCheckBox("隐身登录");
-		jp2_jcb2 = new JCheckBox("记住密码");
+		jp2_jcb1 = new JCheckBox("闅愯韩鐧诲綍");
+		jp2_jcb2 = new JCheckBox("璁颁綇瀵嗙爜");
 		
 		// add above to jp2
 		
@@ -73,21 +73,21 @@ public class QqClientLogin extends JFrame implements ActionListener {
 		
 		//create choice section
 		jtp = new JTabbedPane();
-		jtp.add("QQ号码", jp2);
+		jtp.add("QQ鍙风爜", jp2);
 		jp3 = new JPanel();
-		jtp.add("手机号码", jp3);
+		jtp.add("鎵嬫満鍙风爜", jp3);
 		jp4 = new JPanel();
-		jtp.add("电子邮件", jp4);
+		jtp.add("鐢靛瓙閭欢", jp4);
 		
 		
 		// then South part
 		jp1 = new JPanel();
-		jp1_jb1 = new JButton(new ImageIcon("image/denglu.jpg"));
+		jp1_jb1 = new JButton(new ImageIcon("image/denglu.gif"));
 		// receive request from user
 		jp1_jb1.addActionListener(this);
 		
 		jp1_jb2 = new JButton(new ImageIcon("image/quxiao.jpg"));
-		jp1_jb3 = new JButton(new ImageIcon("image/zhuce.jpg"));
+		jp1_jb3 = new JButton(new ImageIcon("image/zhuce.gif"));
 		
 		// put 3 buttons in jp1
 		
